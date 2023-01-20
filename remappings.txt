@@ -1,0 +1,3 @@
+ds-test/=lib/forge-std/lib/ds-test/src/
+forge-std/=lib/forge-std/src/
+@balancer/=node_modules/@balancer-labs/v2-interfaces/contracts/

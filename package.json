@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@balancer-labs/v2-interfaces": "^0.2.1"
+  },
+  "scripts": {
+    "test": "forge test --fork-url https://mainnet.aurora.dev --block-number 83298100 -vvv",
+    "simulate": "forge script script/veHLDRFix.s.sol:veHLDRFixDeployScript --rpc-url $AURORA_RPC_URL --legacy -vvv",
+    "deploy": "forge script script/veHLDRFix.s.sol:veHLDRFixDeployScript --rpc-url $AURORA_RPC_URL --legacy --slow --broadcast --verify -vvvv",
+    "verify": "forge verify-contract --chain-id 1313161554 --compiler-version v0.7.6+commit.7338295f.Darwin.appleclang 0xc85BC508153F6ceA935e0BB778D2973821aF62Ae src/veHLDRFix.sol:veHLDRFix $AURORASCAN_API_KEY --watch",
+    "verify2": "forge verify-contract --chain-id 1313161554 --compiler-version v0.8.14+commit.80d49f37 0xc85BC508153F6ceA935e0BB778D2973821aF62Ae src/veHLDRFix.sol:veHLDRFix $AURORASCAN_API_KEY --watch"
+  }
+}
+
+
